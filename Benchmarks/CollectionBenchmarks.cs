@@ -81,25 +81,25 @@ namespace Benchmarks
         }
 
         [Benchmark]
-        public bool FindHashSet_10_UsingList()
+        public bool FindGuid_10_UsingHashSet()
         {
             return _hashSetGuids_10.Contains(_searchValue);
         }
 
         [Benchmark]
-        public bool FindHashSet_1_000_UsingList()
+        public bool FindGuid_1_000_UsingHashSet()
         {
             return _hashSetGuids_1_000.Contains(_searchValue);
         }
 
         [Benchmark]
-        public bool FindHashSet_100_000_UsingList()
+        public bool FindGuid_100_000_UsingHashSet()
         {
             return _hashSetGuids_100_000.Contains(_searchValue);
         }
 
         [Benchmark]
-        public bool FindHash_1_000_000_UsingList()
+        public bool FindGuid_1_000_000_UsingHashSet()
         {
             return _hashSetGuids_1_000_000.Contains(_searchValue);
         }
